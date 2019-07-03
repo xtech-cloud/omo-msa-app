@@ -7,9 +7,9 @@ type Application struct {
 	AppName    string     `gorm:"column:app_name;type:varchar(32);unique_index;not null"`
 	AppKey     string     `gorm:"column:app_key;type:char(32);unique_index;not null"`
 	AppSecret  string     `gorm:"column:app_secret;type:char(32);unique_index;not null"`
-	PublicKey  string     `gorm:"column:key_public;unique_index;not null"`
-	PrivateKey string     `gorm:"column:key_private;unique_index;not null"`
-	Profile    string     `gorm:"column:profile;type:TEXT"`
+	PublicKey  string     `gorm:"column:key_public;type:text;unique_index;not null"`
+	PrivateKey string     `gorm:"column:key_private;type:text;unique_index;not null"`
+	Profile    string     `gorm:"column:profile;type:text"`
 }
 
 func (Application) TableName() string {
