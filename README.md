@@ -193,7 +193,6 @@ export APP_MYSQL_DATABASE=omo
     "code":0,
     "message":"",
     "data":{
-        "secret":"ebe8a84a8708b6cef93d2449bd650910",
     }
 }
 ```
@@ -202,8 +201,43 @@ export APP_MYSQL_DATABASE=omo
 
 |参数名|类型|说明|
 |:-----  |:-----|:-----|
-| secret| string | 应用密钥 |
+| | | |
 
+### `/app/key/reset`
+
+**简要描述:**
+
+- 重置Key
+  
+**请求方式：**
+
+- POST 
+
+**参数：** 
+
+|参数名|必选|类型|说明|
+|:----    |:---|:--- |:---   |
+|appname|是  |string |应用名|
+
+
+**返回示例**
+
+```json
+{
+    "code":0,
+    "message":"",
+    "data":{
+    }
+}
+```
+
+**返回参数说明**
+
+|参数名|类型|说明|
+|:-----  |:-----|:-----|
+| | | |
+
+#
 
 ### `/app/profile/modify`
 
