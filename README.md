@@ -101,7 +101,7 @@ export APP_MYSQL_DATABASE=omo
 |appname|是  |string |应用名|
 
 **范例**
-> curl -v -H "Content-Type:application/json" -X POST -d '{"appname":"test"}' 127.0.0.1/app/create
+> curl -v -H "Content-Type:application/json" -X POST -d '{"appname":"test"}' 127.0.0.1/app/query
 
 **返回示例**
 
