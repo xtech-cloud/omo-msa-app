@@ -7,8 +7,8 @@ type Application struct {
 	AppName    string     `gorm:"column:app_name;type:varchar(32);unique;not null"`
 	AppKey     string     `gorm:"column:app_key;type:char(32);unique;not null"`
 	AppSecret  string     `gorm:"column:app_secret;type:char(32);unique;not null"`
-	PublicKey  string     `gorm:"column:key_public;type:text;unique;not null"`
-	PrivateKey string     `gorm:"column:key_private;type:text;unique;not null"`
+	PublicKey  string     `gorm:"column:key_public;type:text;not null"`
+	PrivateKey string     `gorm:"column:key_private;type:text;not null"`
 	Profile    string     `gorm:"column:profile;type:text"`
 }
 
