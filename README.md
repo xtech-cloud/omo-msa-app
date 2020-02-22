@@ -203,11 +203,11 @@ export APP_MYSQL_DATABASE=omo
 |:-----  |:-----|:-----|
 | | | |
 
-### `/app/key/reset`
+### `/app/rsa/reset`
 
 **简要描述:**
 
-- 重置Key
+- 重置RSA密钥对
   
 **请求方式：**
 
